@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address,big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul,li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption,footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure,footer,header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul{list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: "";content: none;}table {border-collapse: collapse;border-spacing: 0;}
+
+body {
+    text-align: center;
+}
+
+
+
+
+
+/* Display */
+
+.dib {
+    display: inline-block;
+}
+.dtc {
+    display: table-cell;
+}
+.db {
+    display: block;
+}
+.di {
+    display: inline;
+}
+
+
+/*Position*/
+.static {
+    position: static;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.sticky {
+    position: sticky;
+}
+.fixed {
+    position: fixed;
+}
+
+
+
+/*flexbox container*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.rowr {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.colr {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.wrap {
+
+}
+
+
+
+
+/* PI width*/
+
+/* extra small */
+
+.xsw{
+    width: 9vw;
+}
+.xsh{
+    height: 9vh;
+}
+
+/* small */
+.sw{
+    width: 14.5vw;
+}
+.sh{
+    height: 14.5vh;
+}
+
+/* medium */
+.mw {
+    width: 23.6vw;
+}
+
+.mh {
+    height: 23.6vh;
+}
+
+/* large */
+.lw {
+    width: 38.1vw;
+}
+.lh {
+    height: 38.1vh;
+}
+
+
+/* extra large */
+.xlw {
+    width: 61.8vw;
+}
+.xlh {
+    height: 61.8vh;
+}
+
+/* 100% viewport */
+.vw {
+    width: 100vw;
+}
+
+.vh {
+    height: 100vh;
+}
+
+/* 100% */
+.fw {
+    width: 100;
+}
+.fh {
+    height: 100;
+}
+
+/* 50% */
+.hw {
+    width: 50%;
+}
+.hw {
+    height: 50%;
+}
+
+
+/*Some helpfull stuff*/
+
+
+
+
+
+/* borders */
+
+.b, .xsb {
+    border: 1px solid;
+}
+
+.sb {
+    border: 3px solid;
+}
+
+.mb {
+    border: 5px solid;
+}
+
+/* basic colors */
+
+
+
+.blue {
+    background-color: blue;
+}
+.bluef, .bluet {
+    color: blue;
+}
+
+.red {
+    background-color: red;
+}
+.redf, .redt {
+    color: red;
+}
+
+.green {
+    background-color: green;
+}
+.greenf, .greent {
+    color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.yellowf, .yellowt {
+    color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+.blackf, .blackt {
+    color: black;
+}
+
+.white {
+    background-color: white;
+}
+.whitef, .whitet {
+    color: white;
+}
+
+/* Text align */
+
+.tac {
+    text-align: center;
+}
+.tal {
+    text-align: left;
+}
+.tar {
+    text-align: right;
+}
+
+/* floats */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/* Full width */
+
+/*
+.fw {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}*/

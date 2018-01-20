@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/myCode/pWidth.css">
+    <script src="world.js"></script>
+    <!--temp style-->
+    <style>
+        body {
+            margin: -50vh;
+            height: 300vh;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+
+        }
+        .ww {
+            display: inline-block;
+            vertical-align: middle;
+            width: 400vw;
+            height: 200vh;
+            background-color: gray;
+            background-image: url(http://www.incompetech.com/gallimaufry/pictures/360/wed-water-mid.jpeg);
+            background-size: 100%, 100%;
+            background-repeat: round;
+        }
+
+    </style>
+</head>
+
+<body style="">
+    <div id="grid" class="vh vw fixed">
+        <div onmouseover="leftScroll()" onmouseout="leftScrollStop()" id="left" class="mw vh b left"></div>
+        <div onmouseover="rightScroll()" onmouseout="rightScrollStop()" id="right" class="mw vh b right"></div>
+    </div>
+    <header class="sh center black dib"></header>
+    <div id="world" class="ww"></div>
+    <footer class="sh black "></footer>
+
+<!--no scroll-->
+<!--
+    <script>
+var config = {
+  scrollAmount: 100,
+  scrollUp: true,
+  end: null,
+  interval: null,
+  checkBody: function () {
+    document.documentElement.scrollTop += 1;
+    var body = (document.documentElement.scrollTop !== 0) ? document.documentElement : document.body;
+    document.documentElement.scrollTop -= 1;
+    return body;
+  }
+}
+
+const body = config.checkBody();
+const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+
+var handler = {
+  mouseWheel: function(event) {
+    let delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    scroll(delta);
+    event.preventDefault();
+  }
+}
+
+function scroll(delta) {
+  const animationInterval = 25;
+  const scrollSpeed = 15;
+  if (config.end == null) {
+    config.end = body.scrollTop;
+  }
+
+  config.end -= config.scrollAmount * delta;
+  config.scrollUp = delta > 0;
+
+  if (config.interval == null) {
+    config.interval = setInterval(function() {
+      let scrollTop = body.scrollTop;
+      let step = Math.round((config.end - scrollTop) / scrollSpeed);
+
+      if (scrollTop <= 0 || scrollTop >= window.scrollHeight - windowHeight || config.scrollUp && step > -1 || !config.scrollUp && step < 1) {
+        console.log('scrollTop: ', scrollTop);
+        clearInterval(config.interval)
+        config.interval = null;
+        config.end = null;
+      }
+      body.scrollTop = scrollTop + step;
+      console.log(scrollTop);
+    }, animationInterval);
+  }
+}
+
+document.addEventListener('mousewheel', handler.mouseWheel, false);
+document.addEventListener('DOMMouseScroll', handler.mouseWheel, false);
+</script>
+-->
+
+
+</body>
+<script>
+    // Assign handleMouse to mouse movement events
+
+</script>
+
+</html>
