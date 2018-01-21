@@ -10,16 +10,20 @@ body {
 
 /* Display */
 
+.df, .dfl {
+    display: flex;
+}
+
 .dib {
     display: inline-block;
 }
 .dtc {
     display: table-cell;
 }
-.db {
+.db, .dbl {
     display: block;
 }
-.di {
+.di, .din {
     display: inline;
 }
 
@@ -46,25 +50,20 @@ body {
 /*flexbox container*/
 
 .row {
-    display: flex;
     flex-direction: row;
 }
 .rowr {
-    display: flex;
     flex-direction: row-reverse;
 }
 .col {
-    display: flex;
     flex-direction: column;
 }
 .colr {
-    display: flex;
     flex-direction: column-reverse;
 }
-.wrap {
-
+.f1, .fl1 {
+    flex: 1;
 }
-
 
 
 
@@ -151,11 +150,11 @@ body {
     border: 1px solid;
 }
 
-.sb {
+.sb, b3 {
     border: 3px solid;
 }
 
-.mb {
+.mb, b5 {
     border: 5px solid;
 }
 
@@ -226,6 +225,7 @@ body {
 .right {
     float: right;
 }
+
 
 
 /* Full width */
