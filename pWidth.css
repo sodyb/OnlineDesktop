@@ -26,6 +26,22 @@ body {
 .di, .din {
     display: inline;
 }
+.dt {
+    display: table;
+}
+.dit {
+    display: inline-table;
+}
+.dtr {
+    display: table-row;
+}
+.dtc {
+    display: table-column;
+}
+.dif {
+    display: inline-flex;
+}
+
 
 
 /*Position*/
